@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import H4 from "../UI/H4";
 import ProductList from "./ProductList";
 
 const Products: React.FC = () => {
@@ -6,7 +7,7 @@ const Products: React.FC = () => {
 
   return (
     <>
-      <h1>Products</h1>
+      <H4>Products</H4>
       <section>Filter section</section>
       <ProductList />
     </>
