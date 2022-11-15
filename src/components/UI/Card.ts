@@ -1,13 +1,11 @@
-import { render } from 'react-dom';
-import styled from 'styled-components';
-import theme from '../../theme';
+import { styled } from "@mui/system";
+import theme from "../../theme";
+import Box from "@mui/material/Box";
+const StyledCard = styled(Box, { name: "StyledCard", slot: "Wrapper" })({
+  width: 124,
+  height: 225,
+  background: "red",
+  borderRadius: 0,
+});
 
-const Card = styled.div`
-  width: 286px;
-  background: ${theme.palette.background.base};
-  border: 1px solid ${theme.palette.background.base};
-  border-radius: ${theme.borderRadius};
-  padding: ${theme.spacing(2)};
-`;
-
-export default Card;
+export default StyledCard;

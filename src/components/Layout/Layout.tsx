@@ -1,10 +1,16 @@
+import Footer from "./Footer/Footer";
 import MainNavigation from "./MainNavigation/MainNavigation";
 
-const Layout: React.FC = (props: any) => {
+type LayoutProps = {
+  children: React.ReactNode;
+};
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
-      <MainNavigation onShowBasket={props.onShowBasket} />
-      <main>{props.children}</main>
+      <MainNavigation onShowBasket={true} />
+      <main>{children}</main>
+      <Footer></Footer>
     </>
   );
 };
