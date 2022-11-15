@@ -1,23 +1,20 @@
-import styled from 'styled-components';
-import theme from '../../theme';
+import { styled } from "@mui/system";
+import Button from "@mui/material/Button";
 
-const Button = styled.button`
-  background: transparent;
-  border: 1px solid ${theme.palette.secondary.main};
-  border-radius: ${theme.borderRadius};
-  color: ${theme.palette.primary.main};
-  padding: ${theme.spacing(2)};
-  ${theme.typography.button};
+const StyledButton = styled(Button, { name: "StyledButton", slot: "Wrapper" })(
+  ({ theme }) => ({
+    background: theme.palette.primary.main,
+    color: theme.palette.text.primary,
+    borderRadius: 2,
 
-  &:hover {
-    border: 1px solid ${theme.palette.secondary.light};
-    color: ${theme.palette.primary.light};
-  }
+    "&:hover": {
+      background: theme.palette.secondary,
+    },
 
-  &:active {
-    border: 1px solid ${theme.palette.secondary.dark};
-    color: ${theme.palette.primary.dark};
-  }
-`;
+    "&:active": {
+      background: theme.palette.secondary,
+    },
+  })
+);
 
-export default Button;
+export default StyledButton;

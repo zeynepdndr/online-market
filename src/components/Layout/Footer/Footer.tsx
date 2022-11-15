@@ -35,52 +35,6 @@ export default function Footer() {
     >
       <Grid
         container
-        spacing={3}
-        sx={{
-          color: "white",
-          alignItems: "center",
-          maxWidth: "95%",
-          margin: "auto",
-        }}
-      >
-        <Grid item xs={2}>
-          <Typography variant="body1" align="center" gutterBottom></Typography>
-        </Grid>
-        <Grid item xs={3}>
-          <Typography variant="subtitle1" align="center" component="p">
-            0212 234 23 23
-          </Typography>
-          <Typography variant="subtitle1" align="center" component="p">
-            0212 343 54 54
-          </Typography>
-          <Typography variant="subtitle1" align="center" component="p">
-            0212 343 65 78
-          </Typography>
-        </Grid>
-        <Grid item xs={2}>
-          <Typography variant="subtitle1" component="div">
-            Facebook
-          </Typography>
-          <Typography variant="subtitle1" component="div">
-            Twitter
-          </Typography>
-          <Typography variant="subtitle1" component="div">
-            Instagram
-          </Typography>
-        </Grid>
-        <Grid item xs={4}>
-          <Typography variant="subtitle1" component="p">
-            Orhangazi, Esenyalı Orhangazi Mah, Alparslan Türkeş Cd No:2/A.
-            Pendik/İstanbul
-          </Typography>
-          <Typography variant="subtitle1" component="p">
-            dmdentmasters@gmail.com
-          </Typography>
-        </Grid>
-      </Grid>
-      <Divider sx={{ bgcolor: "secondary.light", mx: 9, my: 2 }} />
-      <Grid
-        container
         spacing={2}
         sx={{
           maxWidth: "100%",

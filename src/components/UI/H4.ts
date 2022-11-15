@@ -5,7 +5,7 @@ const H4 = styled.h4`
   ${theme.typography.h4};
   margin: 0;
   margin-bottom: ${theme.spacing(6)};
-  color: ${theme.palette.primary.main};
+  color: ${theme.palette.primary};
 `;
 
 export default H4;
