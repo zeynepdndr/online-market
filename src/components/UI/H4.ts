@@ -1,11 +1,11 @@
-import styled from "styled-components";
-import theme from "../../theme";
+import { styled } from "@mui/system";
 
-const H4 = styled.h4`
-  ${theme.typography.h4};
-  margin: 0;
-  margin-bottom: ${theme.spacing(6)};
-  color: ${theme.palette.primary};
-`;
+const H4 = styled("h4")(({ theme, ...props }) => ({
+  color: "#6F6F6F",
+  letterSpacing: 0.25,
+  lineHeight: "26px",
+  fontSize: 20,
+  fontWeight: 400,
+}));
 
 export default H4;

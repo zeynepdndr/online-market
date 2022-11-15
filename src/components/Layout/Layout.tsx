@@ -16,13 +16,12 @@ const theme = createTheme({
     },
 
     background: {
-      // // body: "#161616",
-      // base: "#1F1F1F",
-      // alt1: "#303030",
-      // alt2: "#484848",
+      default: "#1F1F1F",
+      paper: "#FAFAFA",
     },
     text: {
       primary: "#FFF",
+      secondary: "#A8A8A8",
     },
   },
   spacing: (multiplier = 1) => `${4 * multiplier}px`,

@@ -1,11 +1,15 @@
-import styled from 'styled-components';
-import theme from '../../theme';
+import { styled } from "@mui/system";
 
-const Input = styled.input`
-  background: ${theme.palette.background.base};
-  padding: ${theme.spacing(2)};
-  border: none;
-  color: ${theme.palette.text.primary};
-`;
+const Input = styled("input")(({ theme, ...props }) => ({
+  width: 248,
+  height: 48,
+  borderRadius: 2,
+  color: theme.palette.text.secondary,
+  border: "2px solid #E0E0E0",
+  "&:focus": {
+    outline: "none",
+    borderColor: "pink",
+  },
+}));
 
 export default Input;
