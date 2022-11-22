@@ -8,11 +8,11 @@ const StyledButton = styled(Button, { name: "StyledButton", slot: "Wrapper" })(
     borderRadius: 2,
 
     "&:hover": {
-      background: theme.palette.secondary,
+      background: theme.palette.secondary.main,
     },
 
     "&:active": {
-      background: theme.palette.secondary,
+      background: theme.palette.secondary.main,
     },
   })
 );

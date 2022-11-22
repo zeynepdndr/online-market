@@ -68,7 +68,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <ThemeProvider theme={theme}>
       <MainNavigation onShowBasket={true} />
       <main>{children}</main>
-      <Footer></Footer>
+      <Footer />
     </ThemeProvider>
   );
 };
