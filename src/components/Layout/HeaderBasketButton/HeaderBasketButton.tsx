@@ -1,26 +1,40 @@
 import Button from "../../UI/Button";
-import CartIcon from "./CartIcon";
+import basketIcon from "../../../assets/basketIcon.svg";
 
 const HeaderBasketButton: React.FC = (props) => {
   return (
     <Button>
-      <span
-        style={{ width: "1.35rem", height: "1.35rem", marginRight: "0.5rem" }}
-      >
-        <CartIcon />
-      </span>
-      Your Cart
-      <span
+      <div
         style={{
-          backgroundColor: "#b94517",
-          padding: "0.25rem 1rem",
-          borderRadius: "25px",
-          marginLeft: "1rem",
-          fontWeight: "bold",
+          display: "flex",
+          alignItems: "center",
         }}
       >
-        {454}
-      </span>
+        <span
+          style={{
+            backgroundColor: "#fff",
+            width: "40px",
+            height: "40px",
+            borderTopLeftRadius: "8px",
+            borderBottomLeftRadius: "8px",
+          }}
+        >
+          <img alt="Basket Icon" src={basketIcon} width={40} />
+        </span>
+
+        <span
+          style={{
+            backgroundColor: "",
+            fontWeight: "bold",
+            fontSize: "18px",
+            margin: "0 auto",
+            paddingLeft: "12px",
+            paddingRight: "12px",
+          }}
+        >
+          {"$89.50"}
+        </span>
+      </div>
     </Button>
   );
 };
