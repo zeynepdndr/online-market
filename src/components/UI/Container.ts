@@ -1,11 +1,15 @@
-import styled from 'styled-components';
-import theme from '../../theme';
+import styled from "styled-components";
+import theme from "../../theme";
 
 const Container = styled.div`
-  max-width: 960px;
-  margin-top: ${theme.spacing(6)};
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  border: 2px solid rgb(255, 211, 0);
+  position: relative;
 `;
 
 export default Container;
