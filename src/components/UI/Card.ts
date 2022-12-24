@@ -11,5 +11,17 @@
 //   })
 // );
 
-const Card = "h1";
+import styled from "styled-components";
+import theme from "../../theme";
+
+const Card = styled.article`
+  background-color: ${theme.palette.secondary.light};
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  color: ${theme.palette.primary.main};
+  height: 40px;
+  width: 121.02px;
+  border-radius: 8px;
+`;
 export default Card;

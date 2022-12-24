@@ -1,11 +1,8 @@
 import React from "react";
+import Card from "../UI/Card";
 
-type ProductItemProps = {
-  item: any;
-};
-
-const ProductItem: React.FC<ProductItemProps> = ({}) => {
-  return <div>Each Item</div>;
+const ProductItem: React.FC = (props) => {
+  return <Card>hello</Card>;
 };
 
 export default ProductItem;

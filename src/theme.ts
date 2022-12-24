@@ -2,12 +2,12 @@ const theme = {
   palette: {
     primary: {
       main: "rgb(76, 51, 152)",
-      light: "#f3f0fe",
+      light: "#F3F0FE",
       dark: "#CC4400",
     },
     secondary: {
       main: "#7849F7",
-      light: "#FD6E35",
+      light: "#FFFFFF",
       dark: "#CC4400",
     },
     attention: {
@@ -22,7 +22,7 @@ const theme = {
       alt2: "#484848",
     },
     text: {
-      primary: "#FFF",
+      primary: "#3E3E3E",
     },
   },
   spacing: (multiplier = 1) => `${4 * multiplier}px`,
@@ -49,7 +49,7 @@ const theme = {
       "font-size": "22px",
     },
     h6: {
-      "font-weight": "bold",
+      "font-weight": "600",
       "font-size": "16px",
     },
     body: {
