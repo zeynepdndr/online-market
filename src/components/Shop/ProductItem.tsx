@@ -19,8 +19,8 @@ const ProductItem: React.FC<IProductItemProps> = ({
   return (
     <Card key={id}>
       <img alt={name} src={cocaColaEnergy} width={100} />
-      <span>${price}</span>
-      <span>{name}</span>
+      <span style={{ color: "#5d3ebc", marginBottom: 8 }}>${price}</span>
+      <span style={{ marginBottom: 6 }}>{name}</span>
       <Button>Add</Button>
     </Card>
   );

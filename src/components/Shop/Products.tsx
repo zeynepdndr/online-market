@@ -5,6 +5,7 @@ import ProductList from "./ProductList";
 import Button from "../UI/Button";
 import Input from "../UI/Input";
 import H6 from "../UI/H6";
+import RadioButton from "../UI/RadioButton";
 
 const Products: React.FC = () => {
   const [searchedTournamentName, setSearchedTournamentName] = useState("");
@@ -22,7 +23,14 @@ const Products: React.FC = () => {
   return (
     <>
       <H6>Products</H6>
-      <section>Filter section</section>
+      <div
+        id="sub-categories"
+        style={{ display: "flex", flexDirection: "row", marginBottom: 16 }}
+      >
+        <RadioButton>Mug</RadioButton>
+        <RadioButton>Shirt</RadioButton>
+      </div>
+
       <ProductList products={products} />
       {/* <Input placeholder="Search Brand" /> */}
     </>

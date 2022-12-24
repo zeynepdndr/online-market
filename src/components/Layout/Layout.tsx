@@ -9,7 +9,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <MainNavigation onShowBasket={true} />
-      <main>{children}</main>
+      <main style={{ marginTop: 38 }}>{children}</main>
       <Footer />
     </>
   );

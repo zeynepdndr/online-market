@@ -7,6 +7,7 @@ const Button = styled.div`
   height: 40px;
   width: 121.02px;
   border-radius: 8px;
+  cursor: pointer;
 `;
 
 export default Button;

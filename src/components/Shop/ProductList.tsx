@@ -11,13 +11,13 @@ const ProductList: React.FC<IProductListProps> = ({ products }) => {
   if (products.length > 0) {
     productList = (
       <>
-        {products.map((product: any) => (
+        {products.map((item: any, i: number) => (
           <ProductItem
-            key={product.id}
-            id={product.added}
-            description={product.description}
-            name={product.name}
-            price={product.price}
+            key={i}
+            id={item.added}
+            description={item.description}
+            name={item.name}
+            price={item.price}
           />
         ))}
       </>

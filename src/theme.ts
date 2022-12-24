@@ -4,11 +4,12 @@ const theme = {
       main: "rgb(76, 51, 152)",
       light: "#F3F0FE",
       dark: "#CC4400",
+      // #dbdbff
     },
     secondary: {
-      main: "#7849F7",
+      main: "#5d3ebc",
       light: "#FFFFFF",
-      dark: "#CC4400",
+      dark: "#7849f7",
     },
     attention: {
       main: "#D64242",
@@ -23,6 +24,7 @@ const theme = {
     },
     text: {
       primary: "#3E3E3E",
+      secondary: "#191919",
     },
   },
   spacing: (multiplier = 1) => `${4 * multiplier}px`,

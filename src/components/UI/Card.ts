@@ -20,7 +20,9 @@ const Card = styled.article`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: ${theme.palette.primary.main};
+  padding: 12px 18px;
+  font-weight: 600;
+  color: ${theme.palette.text.secondary};
   height: 240px;
   width: 121.02px;
   border-radius: 8px;

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Container from "../UI/Container";
 import basket from "../../assets/basket.svg";
+import m from "../../assets/addIcon.svg";
 import H6 from "../UI/H6";
 
 const BasketSummary: React.FC = () => {
@@ -16,6 +17,7 @@ const BasketSummary: React.FC = () => {
     <>
       <H6>Basket</H6>
       <Container>{summaryContent}</Container>
+      <img alt="Basket" src={m} />
     </>
   );
 };
