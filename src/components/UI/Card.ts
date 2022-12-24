@@ -19,8 +19,9 @@ const Card = styled.article`
   display: inline-flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   color: ${theme.palette.primary.main};
-  height: 40px;
+  height: 240px;
   width: 121.02px;
   border-radius: 8px;
 `;
