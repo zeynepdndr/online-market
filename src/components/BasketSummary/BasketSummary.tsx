@@ -6,7 +6,15 @@ import H6 from "../UI/H6";
 
 const BasketSummary: React.FC = () => {
   const summaryContent = (
-    <div>
+    <div
+      style={{
+        paddingTop: 40,
+        paddingBottom: 56,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
       <img alt="Basket" src={basket} />
       <div>Your Basket is empty</div>
       <div>Add product(s) to your basket to place an order.</div>
