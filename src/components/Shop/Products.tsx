@@ -6,36 +6,13 @@ import Button from "../UI/Button";
 import Input from "../UI/Input";
 import H6 from "../UI/H6";
 import RadioButton from "../UI/RadioButton";
+import useSort from "../../hooks/use-sort";
 
 const Products: React.FC = () => {
   const [searchedTournamentName, setSearchedTournamentName] = useState("");
   const [products, setProducts] = useState([]);
-
-  //For sorting mechanism
-  const [sortedBy, setSortedBy] = useState<null | string>(null);
-  const [sortedOrder, setSortedOrder] = useState<null | string>(null);
-
-  let sortedProducts = products;
-
-  const getSortedValue = (product: any) => {
-    return sortedBy === "price" ? product.price : product.added;
-  };
-
-  if (sortedOrder && sortedBy) {
-    sortedProducts = [...products].sort((a, b) => {
-      const valueA = getSortedValue(a);
-      const valueB = getSortedValue(b);
-
-      const reverseOrder = sortedOrder === "asc" ? 1 : -1;
-
-      return (valueA - valueB) * reverseOrder;
-    });
-  }
-
-  const handleClick = () => {
-    setSortedOrder("desc");
-    setSortedBy("added");
-  };
+  const { sortedBy, sortedOrder, sortedProducts, setSortProducts } =
+    useSort(products);
 
   useEffect(() => {
     fetch("http://localhost:4000/products")
@@ -57,7 +34,7 @@ const Products: React.FC = () => {
         <RadioButton>Shirt</RadioButton>
       </div>
 
-      <Button onClick={handleClick}>Hey lets sort</Button>
+      <Button onClick={setSortProducts}>Hey lets sort</Button>
       <ProductList products={sortedProducts} />
       {/* <Input placeholder="Search Brand" /> */}
     </>
