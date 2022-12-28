@@ -7,8 +7,10 @@ import Input from "../UI/Input";
 import H6 from "../UI/H6";
 import RadioButton from "../UI/RadioButton";
 import useSort from "../../hooks/use-sort";
+import { useDispatch } from "react-redux";
 
 const Products: React.FC = () => {
+  const dispatch = useDispatch();
   const [searchedTournamentName, setSearchedTournamentName] = useState("");
   const [products, setProducts] = useState([]);
   const { sortedBy, sortedOrder, sortedProducts, setSortProducts } =
