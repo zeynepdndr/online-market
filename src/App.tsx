@@ -3,12 +3,15 @@ import Products from "./components/Shop/Products";
 import "./App.css";
 import BasketSummary from "./components/BasketSummary/BasketSummary";
 import Grid from "./components/UI/Grid";
+import Filters from "./components/Filters/Filters";
 
 function App() {
   return (
     <Layout>
       <Grid>
-        <div>Filters</div>
+        <div>
+          <Filters />
+        </div>
         <div>
           <Products />
         </div>
