@@ -1,7 +1,10 @@
 import Button from "../../UI/Button";
 import basketIcon from "../../../assets/basketIcon.svg";
+import { useSelector } from "react-redux";
 
 const HeaderBasketButton: React.FC = (props) => {
+  const totalAmount = useSelector((state: any) => state.cart.totalAmount);
+
   return (
     <Button>
       <div
@@ -32,7 +35,7 @@ const HeaderBasketButton: React.FC = (props) => {
             paddingRight: "12px",
           }}
         >
-          {"$89.50"}
+          ${totalAmount}
         </span>
       </div>
     </Button>
