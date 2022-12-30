@@ -35,7 +35,7 @@ const HeaderBasketButton: React.FC = (props) => {
             paddingRight: "12px",
           }}
         >
-          ${totalAmount}
+          ${totalAmount.toFixed(2)}
         </span>
       </div>
     </Button>

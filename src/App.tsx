@@ -1,7 +1,7 @@
 import Layout from "./components/Layout/Layout";
 import Products from "./components/Shop/Products";
 import "./App.css";
-import BasketSummary from "./components/BasketSummary/BasketSummary";
+import BasketSummary from "./components/Cart/Cart";
 import Grid from "./components/UI/Grid";
 import Filters from "./components/Filters/Filters";
 
