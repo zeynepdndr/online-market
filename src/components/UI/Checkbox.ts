@@ -1,58 +1,44 @@
 import styled from "styled-components";
 import theme from "../../theme";
 
-export const Item = styled.div`
+export const Item = styled.label`
   display: flex;
   align-items: center;
-  height: 48px;
-  position: relative;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  border-radius: 2px;
-  margin-bottom: 10px;
+  vertical-align:center;
+  user-select:none;
+  cursor:pointer;
+  margin-bottom:16px;
 `;
 
-export const CheckBoxLabel = styled.label`
-  position: absolute;
-  top: 25%;
-  left: 4px;
-  width: 24px;
+export const CheckBoxLabel = styled.span`
   height: 24px;
-  border-radius: 50%;
-  background: red;
-  border: 1px solid #ccc;
 `;
+
 const Checkbox = styled.input`
-  opacity: 0;
   z-index: 1;
   cursor: pointer;
   width: 25px;
   height: 25px;
   margin-right: 10px;
   &:hover ~ ${CheckBoxLabel} {
-    background: blue;
+    background: red;
     &::after {
-      content: "\f005";
+      content: "";
       font-family: "FontAwesome";
       display: block;
-      color: white;
-      width: 12px;
-      height: 12px;
+      color: pink;
+      width: 14px;
+      height: 14px;
       margin: 4px;
     }
   }
-  &:checked + ${Item} {
-    background: yellowgreen;
-    border: 2px solid yellowgreen;
-  }
   &:checked + ${CheckBoxLabel} {
-    background: yellowgreen;
-    border: 1px solid yellowgreen;
+    background: yellow;
     &::after {
-      content: "\f005";
+      content: "";
       font-family: "FontAwesome";
       display: block;
-      color: white;
+      color: orange;
       width: 12px;
       height: 12px;
       margin: 4px;

@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import Container from "../UI/Container";
 import basket from "../../assets/basket.svg";
-import m from "../../assets/addIcon.svg";
 import H6 from "../UI/H6";
 import { useSelector } from "react-redux";
 import CartItem from "./CartItem";
 
 const BasketSummary: React.FC = () => {
   const cartItems = useSelector((state: any) => state.cart.items);
-  console.log("erwe", cartItems);
 
   let cartItemList, cartContent;
   if (cartItems.length > 0) {
@@ -48,7 +46,6 @@ const BasketSummary: React.FC = () => {
     <>
       <H6>Basket</H6>
       <Container>{cartContent}</Container>
-      <img alt="Basket" src={m} />
     </>
   );
 };

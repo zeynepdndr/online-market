@@ -4,16 +4,11 @@ import theme from "../../theme";
 const FilterBox = styled.div`
   display: flex;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  width: 100%;
-  background: ${theme.palette.secondary.light};
-  box-shadow: rgb(93 62 188 / 4%) 0px 6px 24px;
-  border-radius: 8px;
-  font-weight: 400;
-  font-size: 14px;
-  color: #525252;
-  cursor: pointer;
+  align-self:flex-start;
+  flex:1 0 100%;
+  max-width:240px;
+  background:rgb(255, 255, 255);
+
 `;
 
 export default FilterBox;

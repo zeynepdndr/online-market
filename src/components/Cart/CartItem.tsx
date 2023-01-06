@@ -1,16 +1,11 @@
 import { useDispatch } from "react-redux";
-
-import classes from "./CartItem.module.css";
 import { cartActions } from "../../store/cart-slice";
 import {
-  Actions,
   Price,
-  Description,
   StyledContainer,
   Title,
 } from "../UI/CartItem";
-import { Item } from "../UI/Checkbox";
-import Button from "../UI/Button";
+
 import Counter, { Paragraph, StyledButton, Text } from "../UI/Counter";
 import trashIcon from "../../assets/trashIcon.svg";
 
