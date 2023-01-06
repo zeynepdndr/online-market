@@ -11,10 +11,11 @@ import {
 } from "../UI/CartItem";
 import { Item } from "../UI/Checkbox";
 import Button from "../UI/Button";
+import Counter, { Paragraph, StyledButton, Text } from "../UI/Counter";
+import trashIcon from "../../assets/trashIcon.svg";
 
 const CartItem = (props: any) => {
   const dispatch = useDispatch();
-  console.log("ndjkfnds", props.item);
   const { name, quantity, total, price, id } = props.item;
 
   const removeItemHandler = () => {
@@ -33,17 +34,21 @@ const CartItem = (props: any) => {
 
   return (
     <StyledContainer>
-      <>
+      <div>
         <Title>{name}</Title>
         <Price>${total.toFixed(2)} </Price>
-      </>
-      <Button>nfdnf</Button>
-
-      {/* <Description>(${price.toFixed(2)}/item)</Description>x{" "}
-      <span>{quantity}</span> */}
-      {/* <ActionButton>0 Comments</ActionButton>
-      <ActionButton>0 Likes</ActionButton>
-      <ActionButton>0 Views</ActionButton> */}
+      </div>
+      <Counter>
+        <StyledButton onClick={removeItemHandler}>
+          <Paragraph>
+            {quantity === 1 ? <img alt="Trash Icon" src={trashIcon} /> : "-"}
+          </Paragraph>
+        </StyledButton>
+        <Text>{quantity}</Text>
+        <StyledButton onClick={addItemHandler}>
+          <Paragraph>+</Paragraph>
+        </StyledButton>
+      </Counter>
     </StyledContainer>
   );
 };

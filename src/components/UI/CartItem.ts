@@ -2,8 +2,11 @@ import styled from "styled-components";
 import theme from "../../theme";
 
 export const StyledContainer = styled.div`
-  border: 1px solid ${theme.palette.secondary.main};
-  padding: 25px 12px 18px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px;
 `;
 export const Title = styled.span`
   color: #393939;
@@ -15,6 +18,7 @@ export const Title = styled.span`
 `;
 export const Price = styled.div`
   color: ${theme.palette.secondary.main};
+  margin-top: 4px;
   font-weight: 600;
   line-height: 18px @media (max-width: 500px) {
     font-size: 0.8rem;
