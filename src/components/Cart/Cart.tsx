@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Container from "../UI/Container";
-import basket from "../../assets/basket.svg";
-import H6 from "../UI/H6";
+import Container from "components/UI/Container";
+import basket from "assets/basket.svg";
+import H6 from "components/UI/H6";
 import { useSelector } from "react-redux";
 import CartItem from "./CartItem";
 
-const BasketSummary: React.FC = () => {
+const Cart: React.FC = () => {
   const cartItems = useSelector((state: any) => state.cart.items);
 
   let cartItemList, cartContent;
@@ -50,4 +50,4 @@ const BasketSummary: React.FC = () => {
   );
 };
 
-export default BasketSummary;
+export default Cart;
