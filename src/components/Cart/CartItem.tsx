@@ -1,13 +1,12 @@
 import { useDispatch } from "react-redux";
-import { cartActions } from "../../store/cart-slice";
+import { cartActions } from "store/cart-slice";
 import {
   Price,
   StyledContainer,
   Title,
-} from "../UI/CartItem";
-
-import Counter, { Paragraph, StyledButton, Text } from "../UI/Counter";
-import trashIcon from "../../assets/trashIcon.svg";
+} from "components/UI/CartItem";
+import Counter, { Paragraph, StyledButton, Text } from "components/UI/Counter";
+import trashIcon from "assets/trashIcon.svg";
 
 const CartItem = (props: any) => {
   const dispatch = useDispatch();

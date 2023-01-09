@@ -5,8 +5,8 @@ import {
   MainNav,
   NavLi,
   NavLink,
-} from "../../UI/NavbarContainer";
-import logo from "../../../assets/logo.svg";
+} from "components/UI/NavbarContainer";
+import logo from "assets/logo.svg";
 
 import HeaderBasketButton from "../HeaderBasketButton/HeaderBasketButton";
 

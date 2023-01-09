@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Card from "../UI/Card";
-import H4 from "../UI/H4";
-import ProductList from "./ProductList";
-import Button from "../UI/Button";
-import Input from "../UI/Input";
-import H6 from "../UI/H6";
-import RadioButton from "../UI/RadioButton";
-import useSort from "../../hooks/use-sort";
 import { useDispatch } from "react-redux";
+import useSort from "hooks/use-sort";
+import ProductList from "./ProductList";
+import Button from "components/UI/Button";
+import H6 from "components/UI/H6";
+import RadioButton from "components/UI/RadioButton";
 
 const Products: React.FC = () => {
   const dispatch = useDispatch();

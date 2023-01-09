@@ -1,8 +1,8 @@
 import { shallow } from "enzyme";
-import App from "../App";
+import App from "components/App";
 import Cart from "components/Cart/Cart";
-import Filters from "../Filters/Filters";
-import Products from "../Shop/Products";
+import Filters from "components/Filters/Filters";
+import Products from "components/Shop/Products";
 
 it("shows a filter box", ()=>{
 

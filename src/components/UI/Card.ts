@@ -12,7 +12,7 @@
 // );
 
 import styled from "styled-components";
-import theme from "../../theme";
+import theme from "theme";
 
 const Card = styled.article`
   background-color: ${theme.palette.secondary.light};

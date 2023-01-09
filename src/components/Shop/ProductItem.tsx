@@ -1,9 +1,9 @@
 import React from "react";
-import Card from "../UI/Card";
-import cocaColaEnergy from "../../assets/cocaColaEnergy.jpeg";
-import Button from "../UI/Button";
 import { useDispatch } from "react-redux";
-import { cartActions } from "../../store/cart-slice";
+import { cartActions } from "store/cart-slice";
+import Card from "components/UI/Card";
+import Button from "components/UI/Button";
+import cocaColaEnergy from "assets/cocaColaEnergy.jpeg";
 
 interface IProductItemProps {
   id: number;

@@ -1,7 +1,7 @@
 import React, {  useState } from "react";
-import Checkbox, { CheckBoxLabel, Item } from "../UI/Checkbox";
-import FilterBox from "../UI/FilterBox";
-import H6 from "../UI/H6";
+import Checkbox, { CheckBoxLabel, Item } from "components/UI/Checkbox";
+import FilterBox from "components/UI/FilterBox";
+import H6 from "components/UI/H6";
 
 const Filters: React.FC = () => {
   const [checked, setChecked] = useState<string | null>(null);

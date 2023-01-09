@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import theme from "../../theme";
+import theme from "theme";
 
 export const Counter = styled.div`
   background-color: ${theme.palette.primary.light};

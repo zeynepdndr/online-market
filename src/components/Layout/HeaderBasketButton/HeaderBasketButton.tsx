@@ -1,6 +1,6 @@
-import Button from "../../UI/Button";
-import basketIcon from "../../../assets/basketIcon.svg";
 import { useSelector } from "react-redux";
+import Button from "components/UI/Button";
+import basketIcon from "assets/basketIcon.svg";
 
 const HeaderBasketButton: React.FC = (props) => {
   const totalAmount = useSelector((state: any) => state.cart.totalAmount);

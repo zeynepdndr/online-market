@@ -1,9 +1,8 @@
-import Layout from "./Layout/Layout";
-import Products from "./Shop/Products";
-import "./App.css";
-import Cart from "./Cart/Cart";
-import Grid from "./UI/Grid";
-import Filters from "./Filters/Filters";
+import Layout from "components/Layout/Layout";
+import Cart from "components/Cart/Cart";
+import Products from "components/Shop/Products";
+import Filters from "components/Filters/Filters";
+import Grid from "components/UI/Grid";
 
 function App() {
   return (
