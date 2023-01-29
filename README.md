@@ -1,6 +1,6 @@
 # OnlineMarket
 
-Add grocery and home goods items to your basket (for the online fasy delivery company)
+Add grocery and home goods items to your basket (for the online fast delivery company)
 
 ## Usage
 
