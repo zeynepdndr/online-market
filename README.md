@@ -2,11 +2,12 @@
 
 Add grocery and home goods items to your basket (for the online fast delivery company)
 
-## Stuff used
+## Built with
 - React
 - Redux
 - Redux-Thunk
 - Json-server
+- Enzyme
 
 ## Installation
 Clone this repo
@@ -19,6 +20,11 @@ Node.js 0.10 or higher is required.
 Install dependencies:
 ```
 $ npm install
+```
+
+Start the backend:
+```
+$ json-server –watch items.json -port 4000  
 ```
 
 Start the server:
